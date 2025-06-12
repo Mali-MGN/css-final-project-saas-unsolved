@@ -1,0 +1,579 @@
+/* Desktop */
+@media(min-width: 1024px) {
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+}
+
+/*tablets and iPads - portrait*/
+
+
+@media (min-width: 768px) and (max-width: 889px) {
+  .container {
+    padding: 0 1rem auto;
+  }
+
+  .hero-left>h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  section>img {
+    height: 120%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  section>img {
+    height: 109%;
+  }
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+  /* Default */
+  .container{
+    width: 100%;
+  }
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    height: 300%;
+  }
+
+  .hero-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-right {
+    display: flex;
+    justify-content: column;
+    height: 32rem;
+  }
+
+  .hero-right img {
+    height: 100%;
+    width: 800%;
+  }
+
+  .logo-1 {
+    height: 6rem;
+    width: 6rem;
+    position:absolute;
+    top: 30rem;
+    left: 8rem;
+  }
+
+  .logo-2 {
+    height: 6rem;
+    width: 6rem;
+    position:absolute;
+    right: 5rem;
+    top: 30rem;
+    right: 14rem;
+  }
+
+  .logo-3 {
+    height: 6rem;
+    width: 6rem;
+    position:absolute;
+    top: 28rem;
+    left: 16rem;
+  }
+
+  .logo-4 {
+    height: 6rem;
+    width: 6rem;
+    position:absolute;
+    top: 40rem;
+    right: 8rem;
+  }
+
+  .logo-5 {
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    top: 40rem;
+    left: 24rem;
+  }
+
+  .logo-6 {
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    top: 48rem;
+  }
+
+  .logo-7 {
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    left: 12rem;
+    top: 42rem;
+  }
+
+  /* Why Front */
+  .front { margin: 0 0 4rem; }
+
+  .front .why-first {
+    width: 200%;
+    margin: 0 0 2rem;
+  }
+
+  .circle-container {
+    width: 100%;
+    padding: 0;
+    gap: 7rem;
+  }
+
+  .line-1{
+    width: 8rem;
+    right: 2rem;
+  }
+  .line-2{
+    width: 8rem;
+    right: 2rem;
+  }
+  .line-3{
+    width: 8rem;
+    right: 2rem;
+  }
+  /* Pricing */
+  .pricing-table {
+    height: 500%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-card-primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .pricing-card-primary hr {
+    width: 100%;
+  }
+
+  .price-cards {
+    justify-content: space-between;
+    margin: 4rem;
+    width: 100%;
+  }
+
+  .price-cards h3 { font-size: x-large; }
+  .price-card p { font-size: x-large; }
+  .price-card img {
+    height: 80px;
+    width: 80px;
+}
+
+/* Hire Us */
+.hire-us {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: 200%;
+}
+
+.hire-us-statement {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem;
+}
+.hire-us-testimonial {
+  margin: 0;
+}
+
+.statement-left { width: 45%; }
+.statement-left i { font-size: 1.250rem; }
+.statement-right {
+  width: 45%;
+}
+.statement-right h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.hire-form { width: 100%; }
+#project-description { font-size: 1.25rem; }
+
+/* Footer */
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 2rem;
+}
+
+.footer-ft {
+    display: flex;
+    flex-wrap: wrap;
+    width: 67%;
+    gap: 10px;
+}
+
+.footer-col {
+  width: 45%;
+}
+
+
+  [aria-controls="navbarDropdown"] {
+  display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 3.1rem;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+    width: 100%;
+    text-align: right;
+    box-shadow: 0 0 20px rgba(52, 49, 75, 0.1);
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: var(--size-20);
+    color: var(--font-color-dark);
+  }
+
+  .nav-home {
+    overflow: visible;
+  }
+  
+}
+
+
+
+
+
+
+
+/* Mobile Responsive */
+@media (min-width: 360px ) and (max-width: 767px ) {
+
+  *, html {
+    max-width: 100%;
+  }
+
+  html, body {
+    display: flex;
+    flex-direction: column;
+    min-width: 360px;
+  }
+
+
+  .container {
+    margin: 0 0rem;
+    padding: 0 1rem;
+  }
+
+  /* Hero */
+
+  .hero, .hero-left, .hero-right {
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6.5rem;
+  }
+
+  /* Hero Left */
+  .hero-left {
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+  }
+
+  .hero-left h1 {
+    margin-top: 4rem;
+    text-align: center;
+    width: 100%;
+    font-size: 180%;
+    font-weight: 600;
+  }
+
+  .hero-left p {
+    text-align: center;
+    width: 100%;
+    font-size: 120%;
+    font-weight: 500;
+  }
+
+  .play-learn {
+    font-size: 0.8rem;
+    width: 120%;
+    text-align: center;
+  }
+
+  /* Hero Right */
+
+  .logo-1 {
+    height: 6rem;
+    width: 6rem;
+    position:absolute;
+    top: 32rem;
+    left: 8rem;
+  }
+
+  .logo-2 {
+    height: 6rem;
+    width: 6rem;
+    position:absolute;
+    right: 5rem;
+    top: 28rem;
+    right: 16rem;
+  }
+
+  .logo-3 {
+    height: 6rem;
+    width: 6rem;
+    position:absolute;
+    top: 28rem;
+    left: 15rem;
+  }
+
+  .logo-4 {
+    height: 6rem;
+    width: 6rem;
+    position:absolute;
+    top: 38rem;
+    right: 14rem;
+  }
+
+  .logo-5 {
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    top: 36rem;
+    left: 16rem;
+    transform: scale(0.8);
+  }
+
+  .logo-5 img{
+    position: relative;
+    left: 0.5rem;
+    top: 0.5rem;
+  }
+
+  .logo-6 {
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    top: 44rem;
+  }
+
+  .logo-7 {
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    left: 10rem;
+    top: 40rem;
+  }
+
+
+
+/* Why Front */
+
+  .front {
+    position: relative;
+    right: 1rem;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .front h2 {
+    margin: 6rem 0 2rem;
+    width: 100%;
+  }
+
+
+  .front p {
+    font-size: 1rem;
+    width: 120%;
+    position: relative;
+    right: 1rem;
+  }
+
+  .why-first { text-align: center; }
+
+  .why-last {
+    position: relative;
+    right: 2rem;
+    margin-bottom: 0;
+    height: 50%;
+  }
+
+  .circle-container {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .circle-header {
+    font-weight: 600;
+    text-align: left;
+  }
+  .line-1, .line-2, .line-3 { display: none; }
+
+  .circle-holder {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 150%;
+  }
+
+
+  /* Pricing */
+
+  .pricing-card-primary, .price-cards { width: 100%; }
+  .pricing-card-primary span {
+    justify-content: center;
+  }
+  .pricing-card-primary p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .pricing-table {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    height: 100%;
+  }
+  
+  .price-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .price-card {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+
+
+
+  /* Hire Us */
+  .hire-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200%;
+    margin: 4rem 0 2rem;
+  }
+
+  .statement-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+
+  .hire-us-statement {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .hire-form {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  #firstName, #lastName, #email, #budget, #country{
+    width: 100%;
+  }
+
+  .form-end { padding-right: 0; }
+  .policy a:last-child { display: none; }
+
+  .hire-p { width: 100%; }
+
+
+  /* Footer */
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    height: 500%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+
+  .footer-ft {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-col {
+    text-align: center;
+    width: 100%;
+  }
+  .footer-col:first-of-type li {
+    width: 16rem;
+    font-size: 1.1rem;
+  }
+
+
+
+
+
+
+
+
+
+  /* [aria-controls="navbarDropdown"] {
+    display: none;
+  } */
+
+  /* [aria-controls="navbarDropdown"] {
+  display: block;
+  } */
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 3.1rem;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+    width: 100%;
+    text-align: right;
+    box-shadow: 0 0 20px rgba(52, 49, 75, 0.1);
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: var(--size-20);
+    color: var(--font-color-dark);
+  }
+
+  .nav-home {
+    overflow: visible;
+  }
+
+}
